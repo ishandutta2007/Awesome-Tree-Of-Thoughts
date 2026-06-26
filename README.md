@@ -1,7 +1,24 @@
-# Awesome-Tree-Of-Thoughts
-## Tree-of-Thoughts (ToT): Evolution, Variants, Types, & Applications
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome Tree-of-Thoughts Banner" width="100%"/>
+</div>
 
-The Tree-of-Thoughts (ToT) is an advanced prompt engineering and architectural framework that generalizes the classic Chain-of-Thought (CoT) paradigm. While CoT forces Large Language Models (LLMs) to generate linear, sequential reasoning steps (System 1 intuition), ToT enables models to explore multiple self-contained reasoning paths simultaneously (System 2 deliberation). By structuring intermediate reasoning steps as discrete "thoughts" within a search tree, ToT allows LLMs to actively branch out, evaluate their own intermediate progress, look ahead, and backtrack when a specific logical path hits a dead-end, vastly improving performance on complex planning and reasoning tasks.
+# Awesome Tree-of-Thoughts (ToT) 🌳💭
+
+<div align="center">
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Tree-Of-Thoughts/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Tree-Of-Thoughts?style=flat-square&logo=github" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Tree-Of-Thoughts/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Tree-Of-Thoughts?style=flat-square&logo=github" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Tree-Of-Thoughts/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Tree-Of-Thoughts?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+**A curated list of awesome papers, frameworks, libraries, and resources focusing on the Tree-of-Thoughts (ToT) prompting paradigm, advanced LLM reasoning, test-time search, and inference-time compute strategies.**
+
+</div>
+
+---
+
+## 🌟 Overview
+
+The **Tree-of-Thoughts (ToT)** is an advanced prompt engineering and architectural framework that generalizes the classic **Chain-of-Thought (CoT)** paradigm. While CoT forces Large Language Models (LLMs) to generate linear, sequential reasoning steps (System 1 intuition), ToT enables models to explore multiple self-contained reasoning paths simultaneously (System 2 deliberation). 
+
+By structuring intermediate reasoning steps as discrete "thoughts" within a search tree, ToT allows LLMs to actively branch out, evaluate their own intermediate progress, look ahead, and backtrack when a specific logical path hits a dead-end, vastly improving performance on complex planning, coding, and mathematical reasoning tasks.
 
 ---
 

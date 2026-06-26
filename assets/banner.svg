@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+
+    <!-- Glowing effect for nodes -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Text Gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Connection Line Gradient -->
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" rx="15" fill="url(#bg-grad)" />
+
+  <!-- Background grid for tech aesthetic -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="50" x2="900" y2="50" />
+    <line x1="0" y1="100" x2="900" y2="100" />
+    <line x1="0" y1="150" x2="900" y2="150" />
+    <line x1="0" y1="200" x2="900" y2="200" />
+    <line x1="0" y1="250" x2="900" y2="250" />
+    <line x1="150" y1="0" x2="150" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="450" y1="0" x2="450" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="750" y1="0" x2="750" y2="300" />
+  </g>
+
+  <!-- Tree Structure Connections (Dashed and Solid Glowing Lines) -->
+  <g stroke="url(#line-grad)" stroke-width="2">
+    <!-- Root to Layer 1 -->
+    <line x1="100" y1="150" x2="220" y2="90" />
+    <line x1="100" y1="150" x2="220" y2="210" stroke-dasharray="4 4" />
+    
+    <!-- Layer 1 to Layer 2 -->
+    <line x1="220" y1="90" x2="340" y2="60" />
+    <line x1="220" y1="90" x2="340" y2="120" />
+    <line x1="220" y1="210" x2="340" y2="180" stroke-dasharray="4 4" />
+    <line x1="220" y1="210" x2="340" y2="240" stroke-dasharray="4 4" />
+    
+    <!-- Layer 2 to Layer 3 -->
+    <line x1="340" y1="60" x2="460" y2="50" />
+    <line x1="340" y1="120" x2="460" y2="130" />
+  </g>
+
+  <!-- Tree Structure Nodes (Circles) -->
+  <!-- Root Node -->
+  <circle cx="100" cy="150" r="12" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="100" cy="150" r="6" fill="#ffffff" />
+
+  <!-- Layer 1 Nodes -->
+  <circle cx="220" cy="90" r="10" fill="#818cf8" filter="url(#glow)" />
+  <circle cx="220" cy="90" r="5" fill="#ffffff" />
+  
+  <circle cx="220" cy="210" r="9" fill="#64748b" opacity="0.6" /> <!-- Pruned/Inactive node -->
+
+  <!-- Layer 2 Nodes -->
+  <circle cx="340" cy="60" r="8" fill="#c084fc" filter="url(#glow)" />
+  <circle cx="340" cy="60" r="4" fill="#ffffff" />
+  
+  <circle cx="340" cy="120" r="8" fill="#c084fc" filter="url(#glow)" />
+  
+  <circle cx="340" cy="180" r="6" fill="#64748b" opacity="0.6" />
+  <circle cx="340" cy="240" r="6" fill="#64748b" opacity="0.6" />
+
+  <!-- Layer 3 Nodes -->
+  <circle cx="460" cy="50" r="7" fill="#f472b6" filter="url(#glow)" />
+  <circle cx="460" cy="130" r="7" fill="#f472b6" filter="url(#glow)" />
+
+  <!-- Typography / Text Elements -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <!-- Sub-heading / Pre-title -->
+    <text x="540" y="100" font-size="14" font-weight="600" fill="#38bdf8" letter-spacing="3" opacity="0.9">AWESOME LIST</text>
+    
+    <!-- Main Title -->
+    <text x="540" y="150" font-size="44" font-weight="800" fill="url(#text-grad)" filter="url(#glow)">Tree-of-Thoughts</text>
+    
+    <!-- Subtitle -->
+    <text x="540" y="185" font-size="16" font-weight="400" fill="#94a3b8" letter-spacing="1">Evolution, Variants, Types &amp; Applications</text>
+  </g>
+</svg>
