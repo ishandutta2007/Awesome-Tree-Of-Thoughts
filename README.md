@@ -9,8 +9,12 @@ The Tree-of-Thoughts (ToT) is an advanced prompt engineering and architectural f
 
 The technical progression of structured reasoning has transitioned from simple verbal constraints to programmatic search abstractions, moving toward native reinforcement-learned cognitive loops.
 
-[Chain-of-Thought (CoT, 2022)] ----> [Tree-of-Thoughts (ToT, 2023)] ----> [Native Test-Time Search (o1/R1, 2024+)](Linear / No Self-Correction)         (External Search Graph Control)          (Internalized System 2 RL Loops)
-
+```mermaid
+flowchart LR
+    A["Chain-of-Thought (CoT, 2022)<br/>(Linear / No Self-Correction)"]
+    --> B["Tree-of-Thoughts (ToT, 2023)<br/>(External Search Graph Control)"]
+    --> C["Native Test-Time Search (o1/R1, 2024+)<br/>(Internalized System 2 RL Loops)"]
+```
 
 *   **The Linear Sequence Era (Chain-of-Thought, ~2022)**
     *   *Concept:* Discovered by Wei et al. Appending `"Let's think step by step"` instructs the model to lay out intermediate milestones sequentially.
