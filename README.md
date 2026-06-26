@@ -83,3 +83,16 @@ Deploying external tree-search wrappers inside real-world production environment
 | [**Complex Combinatorial Planning & Scheduling**](docs/combinatorial_planning.md) | **Application:** Solves logistical optimization problems, such as parsing intricate airline fleet crew shifts under strict regulatory resting rules. ToT maps multiple scheduling combinations simultaneously, backtracking gracefully when a routing choice violates a down-line timing constraint. | 2023 | [Yao et al. (2023)](https://arxiv.org/abs/2305.10601) / [Hao et al. (2023)](https://arxiv.org/abs/2305.14992) |
 | [**Automated Competitive Mathematical Proving**](docs/math_proving.md) | **Application:** Deployed to solve Math Olympiad or advanced engineering proofs. The model tests various algebraic identities, tracks parenthetical constraints, and shifts to alternative mathematical fields if an initial proof vector collapses. | 2024 | [OpenAI (2024)](https://openai.com/index/learning-to-reason-with-llms/) / [Trinh et al. (2024)](https://www.nature.com/articles/s41586-023-06747-5) |
 | [**Multi-Turn Strategic Game Analytics**](docs/strategic_game_analytics.md) | **Application:** Powers game theory and complex simulation forecasting (e.g., text-based chess, legal trial forecasting, or corporate war-gaming). The framework maps out branch lines of action, anticipating an adversary's counter-moves over a deep strategic execution horizon. | 2022 | [FAIR et al. (2022)](https://www.science.org/doi/10.1126/science.ade9097) / [Hao et al. (2023)](https://arxiv.org/abs/2305.14992) |
+
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Tree-Of-Thoughts&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Tree-Of-Thoughts&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Tree-Of-Thoughts&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Tree-Of-Thoughts&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
